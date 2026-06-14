@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/crust">
+
+    <!-- Cabecera Lofi -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= LOFINOTES ="
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:padding="16dp" />
+
+    <!-- Botón Agregar Nota Flotante con estilo retro -->
+    <Button
+        android:id="@+id/btnNuevaNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/surface0"
+        android:text="[ + Crear Nueva Nota ]"
+        android:textColor="@color/lavender"
+        android:fontFamily="monospace" />
+
+    <!-- Menú de navegación inferior (Exigido en rúbrica) -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/crust"
+        app:itemIconTint="@color/lavender"
+        app:itemTextColor="@color/text"
+        app:menu="@menu/navigation_menu" />
+</RelativeLayout>

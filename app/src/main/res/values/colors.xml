@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Catppuccin Mocha Palette -->
+    <color name="mocha_rosewater">#f5e0dc</color>
+    <color name="mocha_flamingo">#f2cdcd</color>
+    <color name="mocha_pink">#f5c2e7</color>
+    <color name="mocha_mauve">#cba6f7</color>
+    <color name="mocha_red">#f38ba8</color>
+    <color name="mocha_maroon">#eba0ac</color>
+    <color name="mocha_peach">#fab387</color>
+    <color name="mocha_yellow">#f9e2af</color>
+    <color name="mocha_green">#a6e3a1</color>
+    <color name="mocha_teal">#94e2d5</color>
+    <color name="mocha_sky">#89dceb</color>
+    <color name="mocha_sapphire">#74c7ec</color>
+    <color name="mocha_blue">#89b4fa</color>
+    <color name="mocha_lavender">#b4befe</color>
+    <color name="mocha_text">#cdd6f4</color>
+    <color name="mocha_subtext1">#bac2de</color>
+    <color name="mocha_subtext0">#a6adc8</color>
+    <color name="mocha_overlay2">#9399b2</color>
+    <color name="mocha_overlay1">#7f849c</color>
+    <color name="mocha_overlay0">#6c7086</color>
+    <color name="mocha_surface2">#585b70</color>
+    <color name="mocha_surface1">#45475a</color>
+    <color name="mocha_surface0">#313244</color>
+    <color name="mocha_base">#1e1e2e</color>
+    <color name="mocha_mantle">#181825</color>
+    <color name="mocha_crust">#11111b</color>
+
+    <!-- Paleta Oficial Catppuccin Mocha - LofiNotes -->
+    <color name="crust">#11111b</color>     <!-- Fondo Base -->
+    <color name="surface0">#313244</color>  <!-- Fondo Tarjetas -->
+    <color name="text">#cdd6f4</color>      <!-- Texto General -->
+    <color name="lavender">#b4befe</color>  <!-- Acento e Interactividad -->
+    <color name="yellow">#f9e2af</color>    <!-- Alarme / Prioridades -->
+
+</resources>
