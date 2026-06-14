@@ -28,7 +28,7 @@
     <color name="mocha_surface1">#45475a</color>
     <color name="mocha_surface0">#313244</color>
     <color name="mocha_base">#1e1e2e</color>
-    <color name="mocha_mantle">#181825</color>
+    <color name="mantle">#181825</color>
     <color name="mocha_crust">#11111b</color>
 
     <!-- Paleta Oficial Catppuccin Mocha - LofiNotes -->

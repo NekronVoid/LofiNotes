@@ -1,1 +1,7 @@
 /build
+
+# Firebase credentials
+google-services.json
+
+# API Keys / Secrets (if you use a secrets.properties file)
+secrets.properties

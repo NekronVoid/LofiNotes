@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/nav_notes"
-        android:title="Tablón"
+        android:title="Notas"
         android:icon="@android:drawable/ic_menu_agenda" />
     <item
         android:id="@+id/nav_pomodoro"
-        android:title="Pomodoro"
+        android:title="Sesiones de estudio"
         android:icon="@android:drawable/ic_lock_idle_alarm" />
 </menu>

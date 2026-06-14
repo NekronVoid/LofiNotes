@@ -53,7 +53,10 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore:25.0.0")
 // Componentes de la interfaz de usuario
     implementation("com.google.android.material:material:1.12.0")
-    
+    implementation(libs.firebase.database)
+
+    implementation("com.google.firebase:firebase-database-ktx:21.0.0")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

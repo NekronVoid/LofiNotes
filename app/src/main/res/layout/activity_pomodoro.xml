@@ -1,6 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://tools.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/crust"
+    tools:context=".PomodoroActivity">
+
+    <TextView
+        android:id="@+id/tvPomoTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Sesiones de Estudio"
+        android:textColor="@color/lavender"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Configuración de Tiempos -->
+    <LinearLayout
+        android:id="@+id/layoutSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvPomoTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="24dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estudio"
+                android:textColor="@color/mocha_overlay2"
+                android:fontFamily="monospace"
+                android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/etStudyTime"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="25"
+                android:textColor="@color/text"
+                android:inputType="number"
+                android:gravity="center"
+                android:fontFamily="monospace"
+                android:backgroundTint="@color/lavender"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descanso"
+                android:textColor="@color/mocha_overlay2"
+                android:fontFamily="monospace"
+                android:textSize="12sp"/>
+            <EditText
+                android:id="@+id/etBreakTime"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="@color/text"
+                android:inputType="number"
+                android:gravity="center"
+                android:fontFamily="monospace"
+                android:backgroundTint="@color/lavender"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25:00"
+        android:textSize="80sp"
+        android:fontFamily="monospace"
+        android:textColor="@color/text"
+        app:layout_constraintTop_toBottomOf="@id/layoutSettings"
+        app:layout_constraintBottom_toTopOf="@id/layoutControls"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/layoutMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnStartPause"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/surface0"
+            android:text="[ EMPEZAR ]"
+            android:textColor="@color/text"
+            android:fontFamily="monospace" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/surface0"
+            android:text="[ REINICIAR ]"
+            android:textColor="@color/text"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+    <!-- Control de Música Ambiental -->
+    <LinearLayout
+        android:id="@+id/layoutMusic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambiente Lofi"
+            android:textColor="@color/lavender"
+            android:fontFamily="monospace"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spnMusic"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lavender"
+            android:entries="@array/music_options"/>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/mantle"
+        app:itemIconTint="@color/lavender"
+        app:itemTextColor="@color/text"
+        app:menu="@menu/navigation_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

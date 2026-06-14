@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">LofiNotes</string>
+    <string-array name="music_options">
+        <item>Silencio</item>
+        <item>Lluvia</item>
+        <item>Bosque</item>
+        <item>Cafetería</item>
+        <item>Olas del Mar</item>
+    </string-array>
 </resources>
