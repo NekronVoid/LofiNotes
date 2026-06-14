@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "774020072763",
+    "project_id": "lofinotes-418eb",
+    "storage_bucket": "lofinotes-418eb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774020072763:android:f6889707c801a7df6c631e",
+        "android_client_info": {
+          "package_name": "com.example.lofinotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3g-ZU2sJNqZ1__ut1D-6s36ildl4tiDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
